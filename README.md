@@ -18,6 +18,6 @@ This project automates the process of booking a trip, from login to payment page
 - Cucumber
 - Selenium
 
-Successful execution:
+### Successful execution:
 ![image](https://github.com/user-attachments/assets/645b9df9-2a3a-45f2-b34b-bc23d3b888d2)
 
