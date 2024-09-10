@@ -17,6 +17,6 @@ public class PaymentPage extends BasePage {
 
     public void validatePaymentPageLoaded() {
         WebElement contactDetailsTitle = waitForVisibility(paymentMap.contactDetailsTitle);
-        Assert.assertTrue(contactDetailsTitle.isDisplayed(), "A tela de pagamento foi carregada com sucesso.");
+        Assert.assertTrue(contactDetailsTitle.isDisplayed(), "The payment screen has been loaded successfully.");
     }
 }

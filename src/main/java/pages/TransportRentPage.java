@@ -16,7 +16,7 @@ public class TransportRentPage extends BasePage {
         try {
             scrollToAndClick(transportRentMap.continueButton);
         } catch (Exception e) {
-            System.out.println("Falha ao clicar no botão 'Continue': " + e.getMessage());
+            System.out.println("Failed to click 'Continue' button:" + e.getMessage());
         }
     }
 }

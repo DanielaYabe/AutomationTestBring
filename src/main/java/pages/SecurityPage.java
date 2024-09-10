@@ -16,7 +16,7 @@ public class SecurityPage extends BasePage {
         try {
             scrollToAndClick(securityMap.continueButton);
         } catch (Exception e) {
-            System.out.println("Falha ao clicar no botão 'Continue': " + e.getMessage());
+            System.out.println("Failed to click 'Continue' button:" + e.getMessage());
         }
     }
 }

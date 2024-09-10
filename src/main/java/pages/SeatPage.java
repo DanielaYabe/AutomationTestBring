@@ -16,9 +16,8 @@ public class SeatPage extends BasePage {
     public void clickNextFlightButton() {
         try {
             click(seatMap.nextFlightButton);
-            System.out.println("Botão 'Next flight' clicado com sucesso.");
         } catch (Exception e) {
-            System.out.println("Falha ao clicar no botão 'Next flight': " + e.getMessage());
+            System.out.println("Failed to click 'Next flight' button: " + e.getMessage());
         }
     }
 
@@ -26,25 +25,25 @@ public class SeatPage extends BasePage {
         try {
             click(seatMap.continueButton);
         } catch (Exception e) {
-            System.out.println("Falha ao clicar no botão 'Continue': " + e.getMessage());
+            System.out.println("Failed to click 'Continue' button: " + e.getMessage());
         }
     }
 
     public void selectSeatsForTrip() {
         try {
             //Depart
-            selectSeat(seatMap.seat14A);
-            selectSeat(seatMap.seat14B);
-            selectSeat(seatMap.seat14C);
+            selectSeat(seatMap.seat14D);
+            selectSeat(seatMap.seat14E);
+            selectSeat(seatMap.seat14F);
             clickNextFlightButton();
 
             //Return
-            selectSeat(seatMap.seat14A);
-            selectSeat(seatMap.seat14B);
-            selectSeat(seatMap.seat14C);
+            selectSeat(seatMap.seat14D);
+            selectSeat(seatMap.seat14E);
+            selectSeat(seatMap.seat14F);
             clickContinueButton();
         } catch (Exception e) {
-            System.out.println("Falha ao selecionar os assentos: " + e.getMessage());
+            System.out.println("Failed to select seats: " + e.getMessage());
         }
     }
 
@@ -56,7 +55,7 @@ public class SeatPage extends BasePage {
         try {
             click(seatMap.noThanksButton);
         } catch (Exception e) {
-            System.out.println("Falha ao clicar no botão 'No, thanks': " + e.getMessage());
+            System.out.println("Failed to click 'No, thanks' button: " + e.getMessage());
         }
     }
 
@@ -65,7 +64,7 @@ public class SeatPage extends BasePage {
             waitForVisibility(seatMap.gotItButton);
             click(seatMap.gotItButton);
         } catch (Exception e) {
-            System.out.println("Botão 'Okay, got it' não encontrado.");
+            System.out.println("'Okay, got it' button not found:"  + e.getMessage());
         }
     }
 }
